@@ -29,3 +29,5 @@ crud: create,read, update, delet ações feitas no banco de dados
 
 Pesquisa POU: escreve os passos para exercer um determinado passo, trabalha com agilidade, escrever requisitos escromatas 
 
+### pydantic 
+toda a questão de validação fica dentro , pydantic faz a validação de dados e comporta sua classe como um dataclasse, garantindo que as colunas sejam iguais tipados, tambem tem mensagem de erros para o usuário 
