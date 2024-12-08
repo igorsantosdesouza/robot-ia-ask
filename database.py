@@ -12,6 +12,9 @@ load_dotenv()
 
 
 def salvar_no_postgres(dados: Vendas):
+    """
+    Função para salvar no postgres
+    """
     DB_USER = os.getenv("DB_USER_PROD")
     DB_NAME = os.getenv("DB_NAME_PROD")
     DB_HOST = os.getenv("DB_HOST_PROD")
