@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: vendas_source # nome que eu quero chamar o modelo
+    schema: public  # esse schema é o que esta alocado minha tabela que iremos usar parasendo um caminhos para encontra a tabela
+    tables:
+      - name: vendas   # é o nome da tabela que iremos usar como referencia 
+       
