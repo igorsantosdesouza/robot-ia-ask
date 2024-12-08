@@ -22,6 +22,8 @@
    3. ativar o ambiente virtual: source .venv/Scripts/Activate
 
    4.  Criar o requeriment.txt para alocar as bibliotecas, porque o projeto está no .venv e o mesmos está no .gitignore
+     criar o arquivo que das bibliotecas que iremos usar fora o local: pip freeze > requirements.txt
+
 
 ### Streamlit 
 cada vez que vc digitar st. write, alguma coisa é um componente, cada componente que for posto no código vai ver um caixa no data viz
@@ -38,6 +40,28 @@ Pesquisa POU: escreve os passos para exercer um determinado passo, trabalha com 
 toda a questão de validação fica dentro , pydantic faz a validação de dados e comporta sua classe como um dataclasse, garantindo que as colunas sejam iguais tipados, tambem tem mensagem de erros para o usuário 
 
 
-
 #### SQl(Postgres)
 Para criar uma tabela: CREATE TABLE NOME DA TABELA( E A CADA TABELA DEFINIR O TIPO DE DADO SE, STRING, NUMERIC, DATE, VARCHAR É TIPO TEXT EXEN)
+
+@asn.rocks perfim de matematica de um geito leve
+
+
+#### MKdocs
+ Ele faz a documentação roubada, devemos instalar mkdocs, mkdocs-material, mkdocsstrings, mkdocstrings-python
+ agora iremos fazer um docs strings que é uma documentação da minha class, pode ser usado no databrics
+  cria a documentação  e os arquivos necessários: mkdocs new . | 
+  docs -> index.md 
+   ### Olha essa  mágica
+
+::: contrato.Vendas
+
+::: database.salvar_no_postgres  no index, tem que por desse geito para aser documentado as mudanças 
+
+nessa classe e função foram documentados """ """, para o mkdocs pegar o que foi escrito referente as funções e classe para criar uma documentaçãoe trá o ::: modulo.classe/função; que foi documentada
+mkdocs serve -> sob a documentação que foi criada
+mkdocs build -> 
+mkdocs gh-deploy ->
+
+6.  fazer o commit
+
+7. atualizar o requirement.txt 
